@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { LiaCookieBiteSolid, FaSpinner } from "react-icons/lia";
+import { LiaCookieBiteSolid } from "react-icons/lia";
+import { FaSpinner } from "react-icons/fa";
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
@@ -60,9 +61,7 @@ const Login = () => {
               <input type="checkbox" className="mr-2" />
               Remember for 30 days
             </label>
-            <a href="#" className="text-blue-600 hover:underline">
-              forgot password
-            </a>
+         <Link to="/forgot" className="text-blue-600 hover:underline">Forgot password?</Link>
           </div>
 
           <button
@@ -80,7 +79,7 @@ const Login = () => {
             ) : (
               "Login"
             )}
-          </button>
+          </button>``
 
           <p className="text-sm text-center text-gray-700">
             Don’t have an account?{" "}
@@ -93,7 +92,7 @@ const Login = () => {
       <div className="hidden md:block w-1/2">
         <div
           className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: "url('../public/cookie.jpg')" }}
+          style={{ backgroundImage: "url('/cookie.jpg')" }}
         ></div>
       </div>
     </motion.div>

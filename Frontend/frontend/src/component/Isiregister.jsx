@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { LiaCookieBiteSolid, FaSpinner } from "react-icons/lia";
+import { LiaCookieBiteSolid } from "react-icons/lia";
+import { FaSpinner } from "react-icons/fa";
 
 const Register = () => {
   const [loading, setLoading] = useState(false);
@@ -30,7 +31,7 @@ const Register = () => {
       <div className="hidden md:block w-1/2">
         <div
           className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: "url('../public/cookie.jpg')" }}
+          style={{ backgroundImage: "url('/cookie.jpg')" }}
         ></div>
       </div>
 
